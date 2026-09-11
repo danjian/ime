@@ -57,7 +57,7 @@ object CandidateManager {
 
     fun isRerankEnabled(context: Context): Boolean {
         return context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
-            .getBoolean(KEY_RERANK_ENABLED, true)
+            .getBoolean(KEY_RERANK_ENABLED, false)
     }
 
     fun setRerankEnabled(context: Context, enabled: Boolean) {
